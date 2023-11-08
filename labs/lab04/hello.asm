@@ -1,4 +1,4 @@
-; hello.asm
+ ; hello.asm
 SECTION .data                        ; Начало секции данных
     hello:     DB 'Hello world!',10  ; 'Hello world!' плюс
                                      ; символ перевода строки
@@ -17,4 +17,3 @@ _start:              ; Точка входа в программу
     mov eax,1        ; Системный вызов для выхода (sys_exit)
     mov ebx,0        ; Выход с кодом возврата '0' (без ошибок)
     int 80h          ; Вызов ядра
-
